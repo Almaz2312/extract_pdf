@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "extract-pdf"
+version = "0.1.0"
+description = "Program to extract text from pdf image"
+authors = ["Almaz Durusaliev"]
+readme = "README.md"
+packages = [{include = "extract_pdf"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pillow = "^10.0.0"
+python-decouple = "^3.8"
+pytesseract = "^0.3.10"
+pdf2image = "^1.16.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
